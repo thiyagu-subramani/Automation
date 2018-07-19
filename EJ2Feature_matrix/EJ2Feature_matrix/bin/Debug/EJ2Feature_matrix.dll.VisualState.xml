@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ShowCheckBoxes="false">
+  <TopNode>[0-1012]EJ2Fature_matrix.DatePicker("Chrome").TEST_15541_011_value</TopNode>
+  <SelectedNode>[0-1048]EJ2Fature_matrix.DatePicker("Chrome").TEST_15541_047_value_with_float_always</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1052]C:\Users\thiyagu.subramani\Documents\Visual Studio 2015\Projects\EJ2Feature_matrix\EJ2Feature_matrix\bin\Debug\EJ2Feature_matrix.dll" Expanded="true" />
+    <Node UniqueName="[0-1053]EJ2Fature_matrix" Expanded="true" />
+    <Node UniqueName="[0-1000]EJ2Fature_matrix.DatePicker" Expanded="true" />
+    <Node UniqueName="[0-1001]EJ2Fature_matrix.DatePicker(&quot;Chrome&quot;)" Expanded="true" />
+    <Node UniqueName="[0-1049]EJ2Fature_matrix.DateTimePicker" Expanded="true" />
+  </Nodes>
+</VisualState>
