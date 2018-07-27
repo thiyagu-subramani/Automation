@@ -10315,7 +10315,1038 @@ namespace EJ2Fature_matrix
             // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
             System.Drawing.Point date = driver.FindElement(By.ClassName("e-sidebar")).Location;
             //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5002_rtl()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[2]/ejs-checkbox/label/span")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-sidebar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5003_closeondocclick()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[6]/ejs-checkbox/label/span")).Click();
+            //driver.FindElement(By.XPath("//*[@id='width']")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-sidebar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5004_closeondocclick_close()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[6]/ejs-checkbox/label/span")).Click();
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5005_closeondocclick_open()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+           // driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[6]/ejs-checkbox/label/span")).Click();
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-sidebar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5006_closeondocclick()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[6]/ejs-checkbox/label/span")).Click();
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[6]/ejs-checkbox/label/span")).Click();
+            driver.FindElement(By.XPath("//*[@id='toggle']")).Click();
+            
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-sidebar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5006_closeondocclick_rtl()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[2]/ejs-checkbox/label/span")).Click();
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[6]/ejs-checkbox/label/span")).Click();
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[6]/ejs-checkbox/label/span")).Click();
+            driver.FindElement(By.XPath("//*[@id='toggle']")).Click();
+           // Swipe(start_x: 50, start_y: 50, end_x: 100, end_y: 50, duration: 1000)
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-sidebar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5007_backdrop()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[12]/ejs-checkbox/label/span")).Click();
+       
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-sidebar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5008_backdrop_close()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[12]/ejs-checkbox/label/span")).Click();
+            //driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='close']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5009_backdrop_closeondoc()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[6]/ejs-checkbox/label/span")).Click();
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[12]/ejs-checkbox/label/span")).Click();
+            //driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='toggle']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-sidebar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5010_backdrop_closeondoc()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[6]/ejs-checkbox/label/span")).Click();
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[12]/ejs-checkbox/label/span")).Click();
+            //driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='toggle']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='close']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5011_backdrop_position()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[12]/ejs-checkbox/label/span")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5012_backdrop_close_position()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[12]/ejs-checkbox/label/span")).Click();
+            //driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='close']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5013_backdrop_closeondoc_position()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[6]/ejs-checkbox/label/span")).Click();
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[12]/ejs-checkbox/label/span")).Click();
+            //driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='toggle']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='close']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5014_backdrop_closeondoc_position()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[6]/ejs-checkbox/label/span")).Click();
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[12]/ejs-checkbox/label/span")).Click();
+            //driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='toggle']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5015_closeondocclick_position()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[6]/ejs-checkbox/label/span")).Click();
+            //driver.FindElement(By.XPath("//*[@id='width']")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5016_closeondocclick_close_position()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[6]/ejs-checkbox/label/span")).Click();
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5017_width()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='width']")).SendKeys("150px");
+            driver.FindElement(By.XPath("//*[@id='width']")).SendKeys(Keys.Enter);
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-sidebar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5018_width_position()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='width']")).SendKeys("150px");
+            driver.FindElement(By.XPath("//*[@id='width']")).SendKeys(Keys.Enter);
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5019_width_position_backdrop()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='width']")).SendKeys("150px");
+            driver.FindElement(By.XPath("//*[@id='width']")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[12]/ejs-checkbox/label/span")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5020_width()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='widthstring']")).SendKeys("400");
+            driver.FindElement(By.XPath("//*[@id='widthstring']")).SendKeys(Keys.Enter);
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-sidebar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5021_width_position()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='widthstring']")).SendKeys("400");
+            driver.FindElement(By.XPath("//*[@id='widthstring']")).SendKeys(Keys.Enter);
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5022_width_position_backdrop()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='widthstring']")).SendKeys("400");
+            driver.FindElement(By.XPath("//*[@id='widthstring']")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[12]/ejs-checkbox/label/span")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-sidebar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5023_width_push()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='width']")).SendKeys("400px");
+            driver.FindElement(By.XPath("//*[@id='width']")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            driver.FindElement(By.XPath("//*[@id='toggle']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-sidebar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5024_slide()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='toggle']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-sidebar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5025_over()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='toggle']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-sidebar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5026_width_push()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='width']")).SendKeys("400px");
+            driver.FindElement(By.XPath("//*[@id='width']")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            driver.FindElement(By.XPath("//*[@id='toggle']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5027_slide()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='toggle']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X-600, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5028_over()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='toggle']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5029_over_full()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            //Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            //driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.ArrowDown);
+            //driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='width']")).SendKeys("100%");
+            driver.FindElement(By.XPath("//*[@id='width']")).SendKeys(Keys.Enter);
+            driver.FindElement(By.XPath("//*[@id='toggle']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5030_over_full_position()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='width']")).SendKeys("100%");
+            driver.FindElement(By.XPath("//*[@id='width']")).SendKeys(Keys.Enter);
+            driver.FindElement(By.XPath("//*[@id='toggle']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5031_width_push_backdrop()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='width']")).SendKeys("400px");
+            driver.FindElement(By.XPath("//*[@id='width']")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            driver.FindElement(By.XPath("//*[@id='toggle']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(1.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[12]/ejs-checkbox/label/span")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-sidebar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5032_slide()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='toggle']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(1.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[12]/ejs-checkbox/label/span")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-sidebar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5033_over()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='type']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='toggle']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(1.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[12]/ejs-checkbox/label/span")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-sidebar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5034_hide_show()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[23]/div/ejs-checkbox/label/span[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[23]/div/ejs-checkbox/label/span[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-sidebar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5035_hide()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[23]/div/ejs-checkbox/label/span[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5036_hide_show_position()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[23]/div/ejs-checkbox/label/span[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[23]/div/ejs-checkbox/label/span[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5037_hide_position()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='position']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[23]/div/ejs-checkbox/label/span[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Sidebar")]
+        [Category("Basic")]
+        public void TEST_15541_5038_toggle()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Sidebar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='toggle']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
         }
     }
 }
