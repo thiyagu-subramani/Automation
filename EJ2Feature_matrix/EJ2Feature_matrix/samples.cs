@@ -2211,8 +2211,264 @@ namespace EJ2Fature_matrix
             TakeAndCompareScreenshot(date.X, date.Y - 15, 250, 340);
 
         }
-    }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-format")]
+        [Category("EJ2_DatePicker")]
+        [Category("Basic")]
+        public void TEST_15541_081_firstday()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("DatePicker")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
 
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("1/13/2018");
+            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("4");
+            driver.FindElement(By.XPath("/html/body/app/date/div[2]/div[21]")).Click();
+            driver.FindElement(By.XPath("//*[@id='datepicker_input']")).Click();
+            driver.FindElement(By.XPath("//*[@id='datepicker']/span/span[2]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-datepicker")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y - 15, 250, 340);
+
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-format")]
+        [Category("EJ2_DatePicker")]
+        [Category("Basic")]
+        public void TEST_15541_082_firstday_outofrange()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("DatePicker")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("1/13/2018");
+            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("8");
+            driver.FindElement(By.XPath("/html/body/app/date/div[2]/div[21]")).Click();
+            driver.FindElement(By.XPath("//*[@id='datepicker_input']")).Click();
+            driver.FindElement(By.XPath("//*[@id='datepicker']/span/span[2]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-datepicker")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y - 15, 250, 340);
+
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-format")]
+        [Category("EJ2_DatePicker")]
+        [Category("Basic")]
+        public void TEST_15541_083_min_max()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("DatePicker")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("5/5/2017");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("5/5/2088");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("6/5/2018");
+            driver.FindElement(By.XPath("//*[@id='datepicker_input']")).Click();
+            driver.FindElement(By.XPath("//*[@id='datepicker']/span/span[2]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-datepicker")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y - 15, 250, 340);
+
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-minmax and value")]
+        [Category("EJ2_DatePicker")]
+        [Category("Basic")]
+        public void TEST_15541_084_start_depth()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("DatePicker")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("7/18/2049");
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("/html/body/app/date/div[2]/div[16]/ejs-checkbox/label/span")).Click();
+            //driver.FindElement(By.XPath("/html/body/app/date/div[2]/div[4]/ejs-checkbox/label/span")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            driver.FindElement(By.XPath("//*[@id='datepicker_input']")).Click();
+            driver.FindElement(By.XPath("//*[@id='datepicker']/span/span[2]")).Click();
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-datepicker")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y - 15, 250, 340);
+
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-minmax and value")]
+        [Category("EJ2_DatePicker")]
+        [Category("Basic")]
+        public void TEST_15541_085_start_depth()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("DatePicker")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("7/18/2049");
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("/html/body/app/date/div[2]/div[16]/ejs-checkbox/label/span")).Click();
+            driver.FindElement(By.XPath("/html/body/app/date/div[2]/div[4]/ejs-checkbox/label/span")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            driver.FindElement(By.XPath("//*[@id='datepicker_input']")).Click();
+            driver.FindElement(By.XPath("//*[@id='datepicker']/span/span[2]")).Click();
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-datepicker")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y - 15, 250, 340);
+
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-minmax and value")]
+        [Category("EJ2_DatePicker")]
+        [Category("Basic")]
+        public void TEST_15541_086_start_depth()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("DatePicker")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("7/18/2049");
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("/html/body/app/date/div[2]/div[16]/ejs-checkbox/label/span")).Click();
+            //driver.FindElement(By.XPath("/html/body/app/date/div[2]/div[4]/ejs-checkbox/label/span")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            driver.FindElement(By.XPath("//*[@id='datepicker_input']")).Click();
+            driver.FindElement(By.XPath("//*[@id='datepicker']/span/span[2]")).Click();
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-datepicker")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y - 15, 250, 340);
+
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-minmax and value")]
+        [Category("EJ2_DatePicker")]
+        [Category("Basic")]
+        public void TEST_15541_087_start_depth()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("DatePicker")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("7/18/2049");
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("/html/body/app/date/div[2]/div[16]/ejs-checkbox/label/span")).Click();
+            driver.FindElement(By.XPath("/html/body/app/date/div[2]/div[4]/ejs-checkbox/label/span")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            driver.FindElement(By.XPath("//*[@id='datepicker_input']")).Click();
+            driver.FindElement(By.XPath("//*[@id='datepicker']/span/span[2]")).Click();
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-datepicker")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y - 15, 250, 340);
+
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-minmax and value")]
+        [Category("EJ2_DatePicker")]
+        [Category("Basic")]
+        public void TEST_15541_088_weeknumber_click()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("DatePicker")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("7/18/2049");
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            driver.FindElement(By.XPath("/html/body/app/date/div[2]/div[14]/ejs-checkbox/label/span")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            driver.FindElement(By.XPath("//*[@id='datepicker_input']")).Click();
+            driver.FindElement(By.XPath("//*[@id='datepicker']/span/span[2]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.50));
+            driver.FindElement(By.XPath("/html/body/div/div/div[2]/table/tbody/tr[1]/td[1]/span")).Click();
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-datepicker")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y - 15, 250, 340);
+
+        }
+        //[Test, Description("TEST-15541: EJ2_FeatureMatrix-minmax and value")]
+        //[Category("EJ2_DatePicker")]
+        //[Category("Basic")]
+        //public void TEST_15541_089_start_depth()
+        //{
+        //    driver.Navigate().Refresh();
+        //    driver.Navigate().GoToUrl("http://localhost:3000/#/");
+        //    driver.Manage().Window.Maximize();
+        //    driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+        //    driver.FindElement(By.LinkText("DatePicker")).Click();
+        //    Thread.Sleep(200);
+        //    ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+        //    //Enable Editing
+        //    driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("7/18/2049");
+        //    Thread.Sleep(TimeSpan.FromSeconds(2.50));
+        //    driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+        //    driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+        //    driver.FindElement(By.XPath("//*[@id='depth']/span")).SendKeys(Keys.ArrowDown);
+        //    Thread.Sleep(TimeSpan.FromSeconds(2.50));
+        //    driver.FindElement(By.XPath("//*[@id='datepicker_input']")).Click();
+        //    driver.FindElement(By.XPath("//*[@id='datepicker']/span/span[2]")).Click();
+        //    Thread.Sleep(TimeSpan.FromSeconds(4.50));
+        //    driver.FindElement(By.Id("2493052200000_349")).Click();
+        //    Thread.Sleep(TimeSpan.FromSeconds(2.50));
+        //    System.Drawing.Point date = driver.FindElement(By.ClassName("e-datepicker")).Location;
+        //    //  Taking Screeshot
+        //    TakeAndCompareScreenshot(date.X, date.Y - 15, 250, 340);
+
+        //}
+    }
 
     [TestFixture("Chrome")]
     [ImageComparison(true)]
@@ -10280,6 +10536,317 @@ namespace EJ2Fature_matrix
             //  Taking Screeshot
             TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
         }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_2032_firstday_2()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("2");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_2033_firstday_4()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("4");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_2034_firstday_6()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("6");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_2035_firstday_outof()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("10");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_2036_min_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            //driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/2017");
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/1111");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/15/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_2037_max_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/9999");
+            //driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/1111");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/15/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_2038_start_depth()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2057");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
+            driver.FindElement(By.XPath("//*[@id='depth']/span")).SendKeys(Keys.Enter);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_2039_start_depth()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("6/6/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            //driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
+            //driver.FindElement(By.XPath("//*[@id='depth']/span")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(1.50));
+            // driver.FindElement(By.XPath("//*[@id='1527791400000_309']/span")).Click();
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_2041_start_depth()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("6/6/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='depth']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(1.50));
+            // driver.FindElement(By.XPath("//*[@id='1527791400000_309']/span")).Click();
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_2042_start_depth()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("6/6/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='depth']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='depth']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(1.50));
+            // driver.FindElement(By.XPath("//*[@id='1527791400000_309']/span")).Click();
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_2043_min_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            //driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/2017");
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/2022");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/5/2032");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_2044_min_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2028");
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/2022");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/5/2032");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_2045_min_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/2022");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/5/2032");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+        }
     }
     [TestFixture("Chrome")]
     [ImageComparison(true)]
@@ -10401,7 +10968,7 @@ namespace EJ2Fature_matrix
 
             //Enable Editing
             Thread.Sleep(TimeSpan.FromSeconds(2.00));
-           // driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[6]/ejs-checkbox/label/span")).Click();
+            // driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[6]/ejs-checkbox/label/span")).Click();
             driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[1]")).Click();
             Thread.Sleep(TimeSpan.FromSeconds(2.50));
 
@@ -10430,7 +10997,7 @@ namespace EJ2Fature_matrix
             Thread.Sleep(TimeSpan.FromSeconds(2.50));
             driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[6]/ejs-checkbox/label/span")).Click();
             driver.FindElement(By.XPath("//*[@id='toggle']")).Click();
-            
+
             driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[1]")).Click();
             Thread.Sleep(TimeSpan.FromSeconds(4.00));
             // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
@@ -10459,7 +11026,7 @@ namespace EJ2Fature_matrix
             Thread.Sleep(TimeSpan.FromSeconds(2.50));
             driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[6]/ejs-checkbox/label/span")).Click();
             driver.FindElement(By.XPath("//*[@id='toggle']")).Click();
-           // Swipe(start_x: 50, start_y: 50, end_x: 100, end_y: 50, duration: 1000)
+            // Swipe(start_x: 50, start_y: 50, end_x: 100, end_y: 50, duration: 1000)
             driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[1]")).Click();
             Thread.Sleep(TimeSpan.FromSeconds(4.00));
             // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
@@ -10483,7 +11050,7 @@ namespace EJ2Fature_matrix
             //Enable Editing
             Thread.Sleep(TimeSpan.FromSeconds(2.00));
             driver.FindElement(By.XPath("//*[@id='sidebar']/div/div[12]/ejs-checkbox/label/span")).Click();
-       
+
             Thread.Sleep(TimeSpan.FromSeconds(4.00));
             // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
             System.Drawing.Point date = driver.FindElement(By.ClassName("e-sidebar")).Location;
@@ -11039,7 +11606,7 @@ namespace EJ2Fature_matrix
             // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
             System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
             //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X-600, date.Y, 1350, 450);
+            TakeAndCompareScreenshot(date.X - 600, date.Y, 1350, 450);
         }
         [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
         [Category("EJ2_Sidebar")]
@@ -11347,6 +11914,420 @@ namespace EJ2Fature_matrix
             System.Drawing.Point date = driver.FindElement(By.ClassName("contents1")).Location;
             //  Taking Screeshot
             TakeAndCompareScreenshot(date.X, date.Y, 1350, 450);
+        }
+
+    }
+    [TestFixture("Chrome")]
+    [ImageComparison(true)]
+    public class FormValidation : NUnitUtil
+    {
+        public FormValidation(string browser)
+        {
+            driver = GetWebDriverForBrowser(browser);
+
+        }
+
+        [TestFixtureTearDown]
+        public void quitDriver()
+        {
+            driver.Quit();
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Form")]
+        [Category("Basic")]
+        public void TEST_15541_6001_default()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.Navigate().GoToUrl("http://localhost:3000/#/about");
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='daternage_input']")).SendKeys("4/4/2016 - 5/5/2017");
+            driver.FindElement(By.XPath("//*[@id='date_input']")).SendKeys("4/4/2016");
+            driver.FindElement(By.XPath("//*[@id='datetime_input']")).SendKeys("4/4/2016 12:00 PM");
+            driver.FindElement(By.XPath("//*[@id='time_input']")).SendKeys("3:00 AM");
+            driver.FindElement(By.XPath("/html/body/app/about/form/div[4]/label")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(5.00));
+            driver.FindElement(By.XPath("//*[@id='submit'] ")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            //  Taking Screeshot
+            TakeAndCompareScreenshot();
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Form")]
+        [Category("Basic")]
+        public void TEST_15541_6002_reset()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.Navigate().GoToUrl("http://localhost:3000/#/about");
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='daternage_input']")).SendKeys("4/4/2016 - 5/5/2017");
+            driver.FindElement(By.XPath("//*[@id='date_input']")).SendKeys("4/4/2016");
+            driver.FindElement(By.XPath("//*[@id='datetime_input']")).SendKeys("4/4/2016 12:00 PM");
+            driver.FindElement(By.XPath("//*[@id='time_input']")).SendKeys("3:00 AM");
+            driver.FindElement(By.XPath("/html/body/app/about/form/div[4]/label")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(5.00));
+            driver.FindElement(By.XPath("//*[@id='reset'] ")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            //  Taking Screeshot
+            TakeAndCompareScreenshot();
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Form")]
+        [Category("Basic")]
+        public void TEST_15541_6003_form()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.Navigate().GoToUrl("http://localhost:3000/#/about");
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='daternage_input']")).SendKeys("4/4/2016 - 5/5/2017");
+            driver.FindElement(By.XPath("/html/body/app/about/form/div[4]/label")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(5.00));
+            driver.FindElement(By.XPath("//*[@id='submit'] ")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            //  Taking Screeshot
+            TakeAndCompareScreenshot();
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Form")]
+        [Category("Basic")]
+        public void TEST_15541_6004_Form()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.Navigate().GoToUrl("http://localhost:3000/#/about");
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='daternage_input']")).SendKeys("4/4/2016 - 5/5/2017");
+            driver.FindElement(By.XPath("//*[@id='date_input']")).SendKeys("");
+            //driver.FindElement(By.XPath("//*[@id='datetime_input']")).SendKeys("4/4/2016 12:00 PM");
+           // driver.FindElement(By.XPath("//*[@id='time_input']")).SendKeys("3:00 AM");
+            driver.FindElement(By.XPath("/html/body/app/about/form/div[4]/label")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(5.00));
+            driver.FindElement(By.XPath("//*[@id='submit'] ")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            //  Taking Screeshot
+            TakeAndCompareScreenshot();
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Form")]
+        [Category("Basic")]
+        public void TEST_15541_6005_Form()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.Navigate().GoToUrl("http://localhost:3000/#/about");
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='daternage_input']")).SendKeys("");
+            driver.FindElement(By.XPath("//*[@id='date_input']")).SendKeys("");
+            driver.FindElement(By.XPath("//*[@id='datetime_input']")).SendKeys("4/4/2016 12:00 PM");
+            driver.FindElement(By.XPath("//*[@id='time_input']")).SendKeys("3:00 AM");
+             driver.FindElement(By.XPath("//*[@id='FormValidation']/div[5]/label")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(5.00));
+            driver.FindElement(By.XPath("//*[@id='submit'] ")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            //  Taking Screeshot
+            TakeAndCompareScreenshot();
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Form")]
+        [Category("Basic")]
+        public void TEST_15541_6006_reset()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.Navigate().GoToUrl("http://localhost:3000/#/about");
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='daternage_input']")).SendKeys("syncfusion");
+            driver.FindElement(By.XPath("//*[@id='date_input']")).SendKeys("4/4/2016");
+            driver.FindElement(By.XPath("//*[@id='datetime_input']")).SendKeys("4/4/2016 12:00 PM");
+            driver.FindElement(By.XPath("//*[@id='time_input']")).SendKeys("3:00 AM");
+            driver.FindElement(By.XPath("//*[@id='FormValidation']/div[5]/label")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(5.00));
+            driver.FindElement(By.XPath("//*[@id='reset'] ")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            //  Taking Screeshot
+            TakeAndCompareScreenshot();
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Form")]
+        [Category("Basic")]
+        public void TEST_15541_6007_twoway()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.Navigate().GoToUrl("http://localhost:3000/#/binding");
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+            //Enable Editing
+            
+            driver.FindElement(By.XPath("//*[@id='datepicker_input']")).SendKeys("4/4/2016");
+            driver.FindElement(By.XPath("/html/body/app/binding/div/div[2]/div[1]/label")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            //  Taking Screeshot
+            TakeAndCompareScreenshot();
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Form")]
+        [Category("Basic")]
+        public void TEST_15541_6008_twoway()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.Navigate().GoToUrl("http://localhost:3000/#/binding");
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+            //Enable Editing
+
+            driver.FindElement(By.XPath("//*[@id='range1_input']")).SendKeys("4/4/2016 - 5/5/2018");
+            driver.FindElement(By.XPath("/html/body/app/binding/div/div[2]/div[1]/label")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-daterangepicker")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y - 10, 490, 60);
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            //  Taking Screeshot
+            TakeAndCompareScreenshot();
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Form")]
+        [Category("Basic")]
+        public void TEST_15541_6009_twoway()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.Navigate().GoToUrl("http://localhost:3000/#/binding");
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+            //Enable Editing
+
+            driver.FindElement(By.XPath("//*[@id='datepicker2_input']")).SendKeys("4/4/2016");
+            driver.FindElement(By.XPath("/html/body/app/binding/div/div[2]/div[1]/label")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            //  Taking Screeshot
+            TakeAndCompareScreenshot();
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Form")]
+        [Category("Basic")]
+        public void TEST_15541_6010_twoway()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.Navigate().GoToUrl("http://localhost:3000/#/binding");
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+            //Enable Editing
+
+            driver.FindElement(By.XPath("//*[@id='range2_input']")).SendKeys("5/4/2016 - 6/5/2018");
+            driver.FindElement(By.XPath("/html/body/app/binding/div/div[2]/div[1]/label")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(1.00));
+            driver.FindElement(By.XPath("//*[@id='range1_input']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(1.00));
+            driver.FindElement(By.XPath("//*[@id='range1']/span/span[2]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-daterangepicker")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y-10, 490, 410);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Form")]
+        [Category("Basic")]
+        public void TEST_15541_6011_twoway()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.Navigate().GoToUrl("http://localhost:3000/#/binding");
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+            //Enable Editing
+
+            driver.FindElement(By.XPath("//*[@id='range2_input']")).SendKeys("5/4/2016 - 6/5/2018");
+            driver.FindElement(By.XPath("/html/body/app/binding/div/div[2]/div[1]/label")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(1.00));
+            driver.FindElement(By.XPath("//*[@id='range1_input']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(1.00));
+            driver.FindElement(By.XPath("//*[@id='range1']/span/span[2]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(1.00));
+            driver.FindElement(By.XPath("//*[@id='range2_input']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='range2']/span/span[1]")).Click();
+            driver.FindElement(By.XPath("/html/body/app/binding/div/div[2]/div[1]/label")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-daterangepicker")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y - 10, 490, 60);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Form")]
+        [Category("Basic")]
+        public void TEST_15541_6012_twoway()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.Navigate().GoToUrl("http://localhost:3000/#/binding");
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+            //Enable Editing
+
+            driver.FindElement(By.XPath("//*[@id='range1_input']")).SendKeys("5/4/2016 - 6/5/2018");
+            driver.FindElement(By.XPath("/html/body/app/binding/div/div[2]/div[1]/label")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(1.00));
+            driver.FindElement(By.XPath("//*[@id='range2_input']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(1.00));
+            driver.FindElement(By.XPath("//*[@id='range2']/span/span[2]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-daterangepicker")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y - 10, 490, 410);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Form")]
+        [Category("Basic")]
+        public void TEST_15541_6013_twoway()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.Navigate().GoToUrl("http://localhost:3000/#/binding");
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+            //Enable Editing
+
+            driver.FindElement(By.XPath("//*[@id='range1_input']")).SendKeys("5/4/2016 - 6/5/2018");
+            driver.FindElement(By.XPath("/html/body/app/binding/div/div[2]/div[1]/label")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(1.00));
+            driver.FindElement(By.XPath("//*[@id='range2_input']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(1.00));
+            driver.FindElement(By.XPath("//*[@id='range2']/span/span[2]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(1.00));
+            driver.FindElement(By.XPath("//*[@id='range1_input']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='range1']/span/span[1]")).Click();
+            driver.FindElement(By.XPath("/html/body/app/binding/div/div[2]/div[1]/label")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-daterangepicker")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y - 10, 490, 60);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Form")]
+        [Category("Basic")]
+        public void TEST_15541_6014_twoway()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.Navigate().GoToUrl("http://localhost:3000/#/binding");
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+            //Enable Editing
+
+            driver.FindElement(By.XPath("//*[@id='datetimepicker_input']")).SendKeys("4/4/2016 3:00 AM");
+            driver.FindElement(By.XPath("/html/body/app/binding/div/div[2]/div[1]/label")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(4.00));
+            //  Taking Screeshot
+            TakeAndCompareScreenshot();
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Form")]
+        [Category("Basic")]
+        public void TEST_15541_6015_twoway()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.Navigate().GoToUrl("http://localhost:3000/#/binding");
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+            //Enable Editing
+
+            driver.FindElement(By.XPath("//*[@id='datetimepicker2_input']")).SendKeys("4/4/2016 3:00 AM");
+            driver.FindElement(By.XPath("/html/body/app/binding/div/div[2]/div[1]/label")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='datetimepicker_input']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='datetimepicker']/span/span[2]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            //  Taking Screeshot
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-datetimepicker")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y - 10, 700, 500);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Form")]
+        [Category("Basic")]
+        public void TEST_15541_6016_twoway()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.Navigate().GoToUrl("http://localhost:3000/#/binding");
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+            //Enable Editing
+
+            driver.FindElement(By.XPath("//*[@id='datetimepicker2_input']")).SendKeys("4/4/2016 3:00 AM");
+            driver.FindElement(By.XPath("/html/body/app/binding/div/div[2]/div[1]/label")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='datetimepicker_input']")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("//*[@id='datetimepicker']/span/span[1]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.00));
+            driver.FindElement(By.XPath("/html/body/app/binding/div/div[2]/div[1]/label")).Click();
+            //  Taking Screeshot
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-datetimepicker")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y - 10, 800, 300);
         }
     }
 }
