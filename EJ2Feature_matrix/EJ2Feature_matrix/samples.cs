@@ -9784,10 +9784,6419 @@ namespace EJ2Fature_matrix
         {
             driver.Quit();
         }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2001_default()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2003_weeknumber()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2005_todaybtn()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//today
+       //                                                                                                           // driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
+       // }
+       
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2007_todaybtn_weeknumber()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//today
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2008_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("3");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2009_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("5");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
+       // }
+        
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2011_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2012_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/9999");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2013_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/1111");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2014_min_max()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("1/1/2016");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2015_min_max()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/2017");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("1/1/2016");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2016_min_max()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/2017");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/2017");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2017_min_max()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/5/2017");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/25/2017");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2018_min_max_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/2017");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/2017");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/15/2017");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2019_min_max_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/2017");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/2017");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("1/15/2017");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2020_min_max_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/2017");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/2017");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/15/2017");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2021_min_max_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/2057");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/2017");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("7/15/2017");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2022_min_max()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/2057");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/25/2057");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2023_min_max_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/2057");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/25/2057");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2057");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2024_start_depth()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2057");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+       // }
+       
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2026_start_depth_today()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2057");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
+       //     //driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click(); //today
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2027_start_depth_rtl_today()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2057");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click(); //today
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2028_start_depth()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2057");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2029_start_depth_rtl()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2057");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     //driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click(); //today
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2030_start_depth_today()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2057");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
+       //     //driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click(); //today
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2031_start_depth_rtl_today()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2057");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click(); //today
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2032_firstday_2()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("2");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2033_firstday_4()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("4");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2034_firstday_6()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("6");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2035_firstday_outof()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("10");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2036_min_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     //driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/2017");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/1111");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/15/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2037_max_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/9999");
+       //     //driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/1111");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/15/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2038_start_depth()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2057");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
+       //     driver.FindElement(By.XPath("//*[@id='depth']/span")).SendKeys(Keys.Enter);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2039_start_depth()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("6/6/2018");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     //driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
+       //     //driver.FindElement(By.XPath("//*[@id='depth']/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(1.50));
+       //     // driver.FindElement(By.XPath("//*[@id='1527791400000_309']/span")).Click();
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2041_start_depth()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("6/6/2018");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='depth']/span")).SendKeys(Keys.ArrowDown);
+       //     Thread.Sleep(TimeSpan.FromSeconds(1.50));
+       //     // driver.FindElement(By.XPath("//*[@id='1527791400000_309']/span")).Click();
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2042_start_depth()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("6/6/2018");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='depth']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='depth']/span")).SendKeys(Keys.ArrowDown);
+       //     Thread.Sleep(TimeSpan.FromSeconds(1.50));
+       //     // driver.FindElement(By.XPath("//*[@id='1527791400000_309']/span")).Click();
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2043_min_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     //driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/2017");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/2022");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/5/2032");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2044_min_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2028");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/2022");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/5/2032");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2045_min_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/2022");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/5/2032");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // // Extra Combinations
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2052_Rtl_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2022");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2053_Rtl_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2021");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2054_Rtl_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2025");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2055_Rtl_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2056_Rtl_maxvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2022");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2057_Rtl_maxvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2021");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2058_Rtl_maxvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2025");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2059_Rtl_maxvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2002_Rtl_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2004_Rtl_weeknumber()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2006_Rtl_todaybtn()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//today
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2010_Rtl_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("5");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2025_Rtl_start_depth()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2057");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     //driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click(); //today
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2060_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("3");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[13]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2061_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("5");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[13]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2062_weekunmber_start()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2063_weekunmber_start()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2064_week_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("2");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2065_week_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing           
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("3");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click(); ;
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2066_week_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("4");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2067_week_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("5");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2068_week_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("6");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2069_week_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("16");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2070_week_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2022");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2071_week_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2021");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2072_week_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2025");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2073_week_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2074_week_maxvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2022");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2075_week_maxvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2021");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2076_week_maxvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2025");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2077_week_maxvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+
+       // //Today Button
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2078_today_start()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2079_today_start()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
+       // }
+       
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2086_today_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2022");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2087_today_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2021");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2088_today_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2025");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       //public void TEST_15541_2089_today_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2090_today_maxvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2022");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2091_today_maxvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2021");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2092_today_maxvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2025");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2093_today_maxvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2094_start_year_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("6/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2022");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[13]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2095_start_year_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2021");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[13]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2096_start_year_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2025");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[13]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2097_start_year_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[13]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2098_start_year_maxvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2022");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[13]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2099_start_year_maxvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("5/2/2021");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[13]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2100_start_year_maxvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("6/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2025");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[13]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2101_start_year_maxvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[13]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2102_start_decade_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("6/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2022");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[13]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2103_start_decade_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2010");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2012");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[13]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2104_start_decade_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2025");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[13]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2105_start_decade_maxvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2022");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[13]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2106_start_decade_maxvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("5/2/2021");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[13]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2107_start_decade_maxvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("6/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2025");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[13]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2108_start_decade_maxvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2012");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[13]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // // firstday 
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2109_firstday_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("2");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[13]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2110_firstday_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2017");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2015");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("2");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[13]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2111_firstday_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2014");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("2");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[13]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2112_firstday_minvalue()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2017");
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/6/2017");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("2");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[13]")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // // RTL related Spec 
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2207_rtl()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2114_rtl_weeknumber()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2115_rtl_todaybutton()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2116_rtl_Depth()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2017");
+       //     driver.FindElement(By.XPath("//*[@id='depth']/span")).SendKeys(Keys.Enter);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();            
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2117_rtl_start_month()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2017");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2118_rtl_start_year()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2017");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2119_rtl_start_decade()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2017");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2120_rtl_min()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing 
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/6/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2121_rtl_max()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing 
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/6/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2122_Rtl_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("2");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2123_Rtl_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing           
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("3");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2124_Rtl_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("4");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2125_Rtl_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("5");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2126_Rtl_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("6");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2127_Rtl_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("16");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2128_today_rtl_weekunumber()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//today
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2129_rtl_today_strat_year()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//today
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2130_rtl_today_strat_decade()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//today
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+        
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2136_rtl_max()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2141_rtl_min_max()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2142_rtl_min_max_SM()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2143_rtl_min_max_SD()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2144_Rtl_week_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("2");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2145_Rtl_week_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing           
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("3");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2146_Rtl_week_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("4");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2147_Rtl_week_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("5");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2148_Rtl_week_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("6");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2149_Rtl_week_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("16");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2150_Rtl_week_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("2");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2151_Rtl_week_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing           
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("3");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2152_Rtl_week_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("4");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2153_Rtl_week_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("5");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2154_Rtl_week_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("6");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2155_Rtl_week_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("16");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2156_Rtl_week_today_strat_year()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2157_Rtl_week_today_strat_decade()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2158_rtl_week_min_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2159_rtl_week_min_high_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2160_rtl_week_min_low_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2019");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2161_rtl_week_min_value_SM()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2162_rtl_min_week_value_SD()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2208_rtl_week_min()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/22/2019");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2163_rtl_week_max()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2164_rtl_week_max_high_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2165_rtl_week_max_low_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2166_rtl_week_max_value_SM()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2167_rtl_week_max_value_SD()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2168_rtl_week_min_max()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2169_rtl_week_min_max_SM()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2170_rtl_week_min_max_SD()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+
+       // // RTL Today
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2171_rtl_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("2");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2172_rtl_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing           
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("3");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2173_rtl_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("4");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2174_rtl_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("5");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2175_rtl_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("6");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2176_rtl_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("16");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2177_rtl_today_start_Year()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2178_rtl_today_start_decade()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2209_rtl_today_min()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2179_rtl_today_min_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2180_rtl_today_min_high_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2181_rtl_today_min_low_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2019");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2182_rtl_today_min_value_SM()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2183_rtl_today_min_value_SD()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2184_rtl_today_max()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2185_rtl_today_max_high_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2186_rtl_today_max_low_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2187_rtl_today_max_value_SM()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2188_rtl_today_max_value_SD()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2189_rtl_today_min_max()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2190_rtl_today_min_max_SM()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2191_rtl_today_min_max_SD()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+
+       // // RTL week Today
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2210_rtl_week_today_min()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2192_rtl_week_today_min_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2193_rtl_week_today_min_high_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2194_rtl_week_today_min_low_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2019");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2195_rtl_week_today_min_value_SM()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2196_rtl_min_week_today_value_SD()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2197_rtl_week_today_max()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2198_rtl_week_today_max_high_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2199_rtl_week_today_max_low_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2200_rtl_week_today_max_value_SM()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2201_rtl_week_today_max_value_SD()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2202_rtl_week_today_min_max()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2203_rtl_week_today_min_max_SM()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2204_rtl_week_today_min_max_SD()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2205_rtl_week_today_start_Year()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2206_rtl_week_today_start_decade()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // // Week Number related Spec 
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2211_week_today()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2212_week_depth_year()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='depth']")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2213_week_depth_decade()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='depth']")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='depth']")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2214_week_start_year()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='depth']")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2215_week_start_decade()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='depth']")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='depth']")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2216_week_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("2");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2217_week_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing           
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("3");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2218_week_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("4");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2219_week_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("5");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2220_week_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("6");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2221_week_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("16");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2222_week_min()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/22/2019");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2223_week_min_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2224_week_min_high_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2225_week_min_low_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2019");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2226_week_min_value_SM()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2227_min_week_value_SD()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2228_week_max()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2229_week_max_high_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2230_week_max_low_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2231_week_max_value_SM()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2132_week_max_value_SD()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2133_week_min_max()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2234_week_min_max_SM()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2235_week_min_max_SD()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2236_week_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("2");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2237_week_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing           
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("3");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2238_week_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("4");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2239_week_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("5");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2240_week_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("6");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2241_week_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("16");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2242_week_today_strat_year()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2243_week_today_strat_decade()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2244_week_today_min()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2019");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2245_week_today_min_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2246_week_today_min_high_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2247_week_today_min_low_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2019");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2248_week_today_min_value_SM()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2249_min_week_today_value_SD()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2250_week_today_max()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2251_week_today_max_high_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2252_week_today_max_low_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2253_week_today_max_value_SM()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2254_week_today_max_value_SD()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2255_week_today_min_max()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2256_week_today_min_max_SM()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2257_week_today_min_max_SD()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // // Today related spec
+
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2258_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("2");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2259_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing           
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("3");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2260_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("4");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2261_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("5");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2262_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("6");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2263_today_firstday()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("16");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2281_today_depth_Year()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='depth']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2282_today_depth_decade()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='depth']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='depth']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2280_today_start_Month()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2264_today_start_Year()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2265_today_start_decade()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2266_today_min()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2267_today_min_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2268_today_min_high_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2269_today_min_low_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2019");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2270_today_min_value_SM()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2271_today_min_value_SD()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2272_today_max()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2273_today_max_high_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2274_today_max_low_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2275_today_max_value_SM()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2017");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2276_today_max_value_SD()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2277_today_min_max()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2278_today_min_max_SM()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/22/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2279_today_min_max_SD()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+
+       // // StartView Related spec
+
+        
+
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2288_start_decade_min_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/12/2018");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2289_start_decade_min_high_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("10/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2290_start_decade_min_low_value()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("10/2/2017");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2291_start_decade_min_value_SDE()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("8/12/2018");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+       // [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+       // [Category("EJ2_Calendar")]
+       // [Category("Basic")]
+       // public void TEST_15541_2292_start_decade_min_value_Sy()
+       // {
+       //     driver.Navigate().Refresh();
+       //     driver.Navigate().GoToUrl("http://localhost:3000/#/");
+       //     driver.Manage().Window.Maximize();
+       //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+       //     driver.FindElement(By.LinkText("Calendar")).Click();
+       //     Thread.Sleep(200);
+       //     ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+       //     //Enable Editing
+       //     driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+       //     driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+       //     Thread.Sleep(TimeSpan.FromSeconds(2.50));
+       //     // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+       //     System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+       //     //  Taking Screeshot
+       //     TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+       // }
+        // Excel Spec for Calendar
+
+        // RTL Property
+
         [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
         [Category("EJ2_Calendar")]
         [Category("Basic")]
-        public void TEST_15541_2001_default()
+        public void TEST_15541_C001_Rtl()
         {
             driver.Navigate().Refresh();
             driver.Navigate().GoToUrl("http://localhost:3000/#/");
@@ -9798,62 +16207,19 @@ namespace EJ2Fature_matrix
             ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
 
             //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
-            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys(Keys.Enter);
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2002_rtl()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
             driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2003_weeknumber()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
-            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label")).Click();
             Thread.Sleep(TimeSpan.FromSeconds(2.50));
             // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
             System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
             //  Taking Screeshot
             TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
         }
+
         [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
         [Category("EJ2_Calendar")]
         [Category("Basic")]
-        public void TEST_15541_2004_weeknumber_rtl()
+        public void TEST_15541_C002_Rtl_Weeknumber()
         {
             driver.Navigate().Refresh();
             driver.Navigate().GoToUrl("http://localhost:3000/#/");
@@ -9864,9 +16230,9 @@ namespace EJ2Fature_matrix
             ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
 
             //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
             driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
-            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
             Thread.Sleep(TimeSpan.FromSeconds(2.50));
             // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
             System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
@@ -9876,7 +16242,7 @@ namespace EJ2Fature_matrix
         [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
         [Category("EJ2_Calendar")]
         [Category("Basic")]
-        public void TEST_15541_2005_todaybtn()
+        public void TEST_15541_C003_Rtl_Todaybtn()
         {
             driver.Navigate().Refresh();
             driver.Navigate().GoToUrl("http://localhost:3000/#/");
@@ -9887,55 +16253,9 @@ namespace EJ2Fature_matrix
             ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
 
             //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
-            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//today
-                                                                                                                  // driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2006_todaybtn_rtl()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
-            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//today
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
             driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2007_todaybtn_weeknumber()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
-            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//today
-            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label")).Click();
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
             Thread.Sleep(TimeSpan.FromSeconds(2.50));
             // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
             System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
@@ -9945,7 +16265,7 @@ namespace EJ2Fature_matrix
         [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
         [Category("EJ2_Calendar")]
         [Category("Basic")]
-        public void TEST_15541_2008_firstday()
+        public void TEST_15541_C004_Rtl_Depth()
         {
             driver.Navigate().Refresh();
             driver.Navigate().GoToUrl("http://localhost:3000/#/");
@@ -9956,79 +16276,154 @@ namespace EJ2Fature_matrix
             ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
 
             //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='depth']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+           
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C005_Rtl_start_year()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C006_Rtl_start_decade()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C007_Rtl_min()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/12/2048");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C008_Rtl_Max()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C009_Rtl_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C010_Rtl_firstday()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
             driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("3");
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys(Keys.Enter);
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2009_firstday()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
-            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("5");
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys(Keys.Enter);
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2010_firstday_rtl()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
-            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("5");
             driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2010_today_rtl_weekunumber()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
 
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
-            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//today
-            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label")).Click();
-            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
             Thread.Sleep(TimeSpan.FromSeconds(2.50));
             // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
             System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
@@ -10038,7 +16433,7 @@ namespace EJ2Fature_matrix
         [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
         [Category("EJ2_Calendar")]
         [Category("Basic")]
-        public void TEST_15541_2011_value()
+        public void TEST_15541_C011_Rtl_firstday()
         {
             driver.Navigate().Refresh();
             driver.Navigate().GoToUrl("http://localhost:3000/#/");
@@ -10049,18 +16444,20 @@ namespace EJ2Fature_matrix
             ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
 
             //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
-            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys(Keys.Enter);
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("5");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+
             Thread.Sleep(TimeSpan.FromSeconds(2.50));
             // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
             System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
             //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
         }
         [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
         [Category("EJ2_Calendar")]
         [Category("Basic")]
-        public void TEST_15541_2012_value()
+        public void TEST_15541_C012_Rtl_firstday()
         {
             driver.Navigate().Refresh();
             driver.Navigate().GoToUrl("http://localhost:3000/#/");
@@ -10071,18 +16468,233 @@ namespace EJ2Fature_matrix
             ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
 
             //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/9999");
-            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys(Keys.Enter);
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("15");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
+
             Thread.Sleep(TimeSpan.FromSeconds(2.50));
             // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
             System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
             //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
         }
         [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
         [Category("EJ2_Calendar")]
         [Category("Basic")]
-        public void TEST_15541_2013_value()
+        public void TEST_15541_C013_rtl_min_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2017");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2017");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C014_rtl_min_High_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2017");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C015_rtl_min_low_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2019");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C015_rtl_min_value_SM()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C016_rtl_min_value_SD()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/22/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C017_rtl_max_high_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C018_rtl_max_low_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2017");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C019_rtl_max_value_SM()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2017");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C020_rtl_max_value_SD()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C021_rtl_value()
         {
             driver.Navigate().Refresh();
             driver.Navigate().GoToUrl("http://localhost:3000/#/");
@@ -10094,17 +16706,17 @@ namespace EJ2Fature_matrix
 
             //Enable Editing
             driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/1111");
-            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys(Keys.Enter);
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();//rtl
             Thread.Sleep(TimeSpan.FromSeconds(2.50));
             // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
             System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
             //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
         }
         [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
         [Category("EJ2_Calendar")]
         [Category("Basic")]
-        public void TEST_15541_2014_min_max()
+        public void TEST_15541_C022_rtl_value()
         {
             driver.Navigate().Refresh();
             driver.Navigate().GoToUrl("http://localhost:3000/#/");
@@ -10115,19 +16727,18 @@ namespace EJ2Fature_matrix
             ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
 
             //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2017");
-            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("1/1/2016");
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/9999");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();//rtl
             Thread.Sleep(TimeSpan.FromSeconds(2.50));
             // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
             System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
             //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
         }
         [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
         [Category("EJ2_Calendar")]
         [Category("Basic")]
-        public void TEST_15541_2015_min_max()
+        public void TEST_15541_C056_min_high_max()
         {
             driver.Navigate().Refresh();
             driver.Navigate().GoToUrl("http://localhost:3000/#/");
@@ -10138,19 +16749,20 @@ namespace EJ2Fature_matrix
             ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
 
             //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/2017");
-            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("1/1/2016");
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2016");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();//rtl
             Thread.Sleep(TimeSpan.FromSeconds(2.50));
             // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
             System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
             //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
         }
+
         [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
         [Category("EJ2_Calendar")]
         [Category("Basic")]
-        public void TEST_15541_2016_min_max()
+        public void TEST_15541_C057_min_equal_max()
         {
             driver.Navigate().Refresh();
             driver.Navigate().GoToUrl("http://localhost:3000/#/");
@@ -10161,19 +16773,19 @@ namespace EJ2Fature_matrix
             ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
 
             //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/2017");
-            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/2017");
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();//rtl
             Thread.Sleep(TimeSpan.FromSeconds(2.50));
             // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
             System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
             //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
         }
         [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
         [Category("EJ2_Calendar")]
         [Category("Basic")]
-        public void TEST_15541_2017_min_max()
+        public void TEST_15541_C079_min_equal_max_and_value()
         {
             driver.Navigate().Refresh();
             driver.Navigate().GoToUrl("http://localhost:3000/#/");
@@ -10184,210 +16796,21 @@ namespace EJ2Fature_matrix
             ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
 
             //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/5/2017");
-            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/25/2017");
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2018_min_max_value()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/2017");
-            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/2017");
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/15/2017");
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2019_min_max_value()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/2017");
-            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/2017");
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("1/15/2017");
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2020_min_max_value()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/2017");
-            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/2017");
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/15/2017");
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2021_min_max_value()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/2057");
-            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/2017");
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("7/15/2017");
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2022_min_max()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/2057");
-            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/25/2057");
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2023_min_max_value()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/2057");
-            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/25/2057");
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2057");
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2024_start_depth()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2057");
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2025_start_depth_rtl()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2057");
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
             driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
-            //driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click(); //today
             Thread.Sleep(TimeSpan.FromSeconds(2.50));
             // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
             System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
             //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
         }
+
         [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
         [Category("EJ2_Calendar")]
         [Category("Basic")]
-        public void TEST_15541_2026_start_depth_today()
+        public void TEST_15541_C099_rtl_min_max()
         {
             driver.Navigate().Refresh();
             driver.Navigate().GoToUrl("http://localhost:3000/#/");
@@ -10398,46 +16821,42 @@ namespace EJ2Fature_matrix
             ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
 
             //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2057");
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
-            //driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
-            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click(); //today
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2027_start_depth_rtl_today()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2057");
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2016");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/22/2016");
             driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
-            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click(); //today
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        // Weeknumber property
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C023_Weeknumber_today()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
             Thread.Sleep(TimeSpan.FromSeconds(2.50));
             // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
             System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
             //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
         }
         [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
         [Category("EJ2_Calendar")]
         [Category("Basic")]
-        public void TEST_15541_2028_start_depth()
+        public void TEST_15541_C024_Weeknumber_Depth()
         {
             driver.Navigate().Refresh();
             driver.Navigate().GoToUrl("http://localhost:3000/#/");
@@ -10448,311 +16867,20 @@ namespace EJ2Fature_matrix
             ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
 
             //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2057");
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2029_start_depth_rtl()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2057");
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
-            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
-            //driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click(); //today
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2030_start_depth_today()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2057");
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
-            //driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
-            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click(); //today
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2031_start_depth_rtl_today()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2057");
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
-            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[2]/ejs-checkbox/label/span")).Click();
-            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click(); //today
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2032_firstday_2()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
-            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("2");
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys(Keys.Enter);
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2033_firstday_4()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
-            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("4");
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys(Keys.Enter);
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2034_firstday_6()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
-            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("6");
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys(Keys.Enter);
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2035_firstday_outof()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2017");
-            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("10");
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys(Keys.Enter);
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 310);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2036_min_value()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            //driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/2017");
-            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/1111");
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/15/2018");
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2037_max_value()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/9999");
-            //driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/1111");
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/15/2018");
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys(Keys.Enter);
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2038_start_depth()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2057");
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
-            driver.FindElement(By.XPath("//*[@id='depth']/span")).SendKeys(Keys.Enter);
-            Thread.Sleep(TimeSpan.FromSeconds(2.50));
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2039_start_depth()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("6/6/2018");
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
-            //driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.Enter);
-            //driver.FindElement(By.XPath("//*[@id='depth']/span")).Click();
-            Thread.Sleep(TimeSpan.FromSeconds(1.50));
-            // driver.FindElement(By.XPath("//*[@id='1527791400000_309']/span")).Click();
-            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
-            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
-            //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
-        }
-        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
-        [Category("EJ2_Calendar")]
-        [Category("Basic")]
-        public void TEST_15541_2041_start_depth()
-        {
-            driver.Navigate().Refresh();
-            driver.Navigate().GoToUrl("http://localhost:3000/#/");
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.FindElement(By.LinkText("Calendar")).Click();
-            Thread.Sleep(200);
-            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
-
-            //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("6/6/2018");
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
             driver.FindElement(By.XPath("//*[@id='depth']/span")).SendKeys(Keys.ArrowDown);
-            Thread.Sleep(TimeSpan.FromSeconds(1.50));
-            // driver.FindElement(By.XPath("//*[@id='1527791400000_309']/span")).Click();
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
             // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
             System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
             //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
         }
+
         [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
         [Category("EJ2_Calendar")]
         [Category("Basic")]
-        public void TEST_15541_2042_start_depth()
+        public void TEST_15541_C025_week_start_year()
         {
             driver.Navigate().Refresh();
             driver.Navigate().GoToUrl("http://localhost:3000/#/");
@@ -10763,22 +16891,20 @@ namespace EJ2Fature_matrix
             ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
 
             //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("6/6/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
             driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
-            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
-            driver.FindElement(By.XPath("//*[@id='depth']/span")).SendKeys(Keys.ArrowDown);
-            driver.FindElement(By.XPath("//*[@id='depth']/span")).SendKeys(Keys.ArrowDown);
-            Thread.Sleep(TimeSpan.FromSeconds(1.50));
-            // driver.FindElement(By.XPath("//*[@id='1527791400000_309']/span")).Click();
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
             // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
             System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
             //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 340);
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
         }
         [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
         [Category("EJ2_Calendar")]
         [Category("Basic")]
-        public void TEST_15541_2043_min_value()
+        public void TEST_15541_C026_week_start_decade()
         {
             driver.Navigate().Refresh();
             driver.Navigate().GoToUrl("http://localhost:3000/#/");
@@ -10789,20 +16915,1710 @@ namespace EJ2Fature_matrix
             ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
 
             //Enable Editing
-            //driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/25/2017");
-            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/2022");
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/5/2032");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C027_week_min()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/12/2048");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C028_week_Max()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C029_week_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C030_week_firstday()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("3");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C031_week_firstday()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("5");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C032_week_firstday()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("15");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C033_week_min_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2017");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2017");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C034_week_min_High_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2017");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C035_week_min_low_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2019");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C036_week_min_value_SM()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C037_week_min_value_SD()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/22/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C038_week_max_high_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C039_week_max_low_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2017");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C040_week_max_value_SM()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2017");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C041_week_max_value_SD()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C042_week_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/1111");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C058_week_min_high_max()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2016");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C059_week_min_equal_max()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C043_week_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/9999");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C080_week_min_equal_max_and_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C100_week_min_max()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2016");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/22/2016");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[6]/ejs-checkbox/label/span")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C044_today_Depth()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='depth']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C045_today_start_year()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C046_today_start_decade()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C047_today_min()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/12/2048");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C048_today_Max()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C049_today_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C050_today_firstday()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("3");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C051_today_firstday()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("5");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C052_today_firstday()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("15");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C053_today_min_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2017");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2017");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C054_today_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/1111");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C055_today_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/9999");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C060_today_min_high_max()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2016");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C061_today_min_equal_max()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();//rtl
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C081_today_min_equal_max_and_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C101_today_min_max()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2016");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/22/2016");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[8]/ejs-checkbox/label/span")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C067_start_year_min()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C062_start_year_min_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/12/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C063_start_year_min_high_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("10/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C064_start_year_min_low_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("6/12/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C065_start_year_min_value_SY()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("8/12/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C066_start_year_min_value_SM()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C068_start_year_max()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C069_start_year_max_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/22/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/12/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C070_start_year_max_high_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("10/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C071_start_year_max_low_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("10/2/2017");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C072_start_year_max_value_SY()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("3/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("8/12/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C073_start_year_max_value_SM()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("3/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C074_start_year_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/1111");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C075_start_year_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/9999");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C076_start_year_min_high_max()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2016");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C077_start_year_min_equal_max()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C078_start_year_min_equal_max_and_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C102_start_year_min_max()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2016");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("8/2/2016");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C081_start_decade_min()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C082_start_decade_min_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/12/2019");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C083_start_decade_min_high_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("10/2/2020");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C084_start_decade_min_low_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("10/2/2017");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+       
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C086_start_decade_min_value_SY()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C087_start_decade_max()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C088_start_decade_max_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("3/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/12/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C089_start_decade_max_high_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("10/2/2020");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C090_start_decade_max_low_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("10/2/2017");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C092_start_decade_max_value_SY()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("3/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C093_start_decade_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/1111");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C094_start_decade_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/9999");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C095_start_decade_min_high_max()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2016");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C096_start_decade_min_equal_max()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C097_start_decade_min_equal_max_and_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C098_start_decade_min_max()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2016");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            driver.FindElement(By.XPath("//*[@id='start']/span")).SendKeys(Keys.ArrowDown);
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        } // Min Max and Value
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C103_min()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("5/12/2038");
             driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
             Thread.Sleep(TimeSpan.FromSeconds(2.50));
             // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
             System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
             //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
         }
+
         [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
         [Category("EJ2_Calendar")]
         [Category("Basic")]
-        public void TEST_15541_2044_min_value()
+        public void TEST_15541_C104_Max()
         {
             driver.Navigate().Refresh();
             driver.Navigate().GoToUrl("http://localhost:3000/#/");
@@ -10813,20 +18629,19 @@ namespace EJ2Fature_matrix
             ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
 
             //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/25/2028");
-            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/2022");
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/5/2032");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/12/2018");
             driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
             Thread.Sleep(TimeSpan.FromSeconds(2.50));
             // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
             System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
             //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
         }
+
         [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
         [Category("EJ2_Calendar")]
         [Category("Basic")]
-        public void TEST_15541_2045_min_value()
+        public void TEST_15541_C105_value()
         {
             driver.Navigate().Refresh();
             driver.Navigate().GoToUrl("http://localhost:3000/#/");
@@ -10837,16 +18652,436 @@ namespace EJ2Fature_matrix
             ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
 
             //Enable Editing
-            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/6/2022");
-            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/5/2022");
-            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/5/2032");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C106_firstday()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("3");
             driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
             Thread.Sleep(TimeSpan.FromSeconds(2.50));
             // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
             System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
             //  Taking Screeshot
-            TakeAndCompareScreenshot(date.X, date.Y, 250, 300);
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
         }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C107_firstday()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/12/2018");
+            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("5");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C108_firstday()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("3/12/2018");
+            driver.FindElement(By.XPath("//*[@id='max']")).SendKeys("15");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C109_min_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/12/2017");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2017");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C110_min_High_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2017");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C111_min_low_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("3/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("11/22/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C112_min_value_SM()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C113_min_value_SD()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/22/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C114_max_high_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C115_max_low_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/22/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2017");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C116_max_value_SM()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("6/22/2017");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C117_max_value_SD()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C118_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/1111");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C119_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/9999");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C120_min_high_max()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2016");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C121_min_equal_max()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C122_min_equal_max_and_value()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("//*[@id='value']")).SendKeys("2/2/2018");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            // helper.buttonClick(driver, By.XPath("//*[@id='timepicker']/span/span[2]"));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            //  Taking Screeshot
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+        [Test, Description("TEST-15541: EJ2_FeatureMatrix-Default")]
+        [Category("EJ2_Calendar")]
+        [Category("Basic")]
+        public void TEST_15541_C123_min_max()
+        {
+            driver.Navigate().Refresh();
+            driver.Navigate().GoToUrl("http://localhost:3000/#/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.FindElement(By.LinkText("Calendar")).Click();
+            Thread.Sleep(200);
+            ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0, -250);");
+
+            //Enable Editing
+            driver.FindElement(By.XPath("//*[@id='minvalue']")).SendKeys("2/2/2016");
+            driver.FindElement(By.XPath("//*[@id='maxvalue']")).SendKeys("2/22/2016");
+            driver.FindElement(By.XPath("/html/body/app/calendar/div[2]/div[19]")).Click();
+            Thread.Sleep(TimeSpan.FromSeconds(2.50));
+            System.Drawing.Point date = driver.FindElement(By.ClassName("e-calendar")).Location;
+            TakeAndCompareScreenshot(date.X, date.Y, 270, 310);
+        }
+
+
     }
     [TestFixture("Chrome")]
     [ImageComparison(true)]
